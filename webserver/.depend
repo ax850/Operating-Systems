@@ -1,0 +1,8 @@
+client.o: client.c common.h
+client_simple.o: client_simple.c common.h
+common.o: common.c common.h
+fileset.o: fileset.c common.h
+request.o: request.c common.h request.h
+server.o: server.c common.h request.h server_thread.h
+server_thread.o: server_thread.c request.h server_thread.h common.h
+server_thread_bk.o: server_thread_bk.c request.h server_thread.h common.h
